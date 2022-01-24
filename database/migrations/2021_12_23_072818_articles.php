@@ -20,7 +20,7 @@ class Articles extends Migration
       $table->string('image');
       $table->longText('content');
       $table->string('hit')->default(0);
-      $table->string('status')->default(0)->comment('0:Pasif 1:Aktif');
+      $table->string('status')->default(1)->comment('0:Pasif 1:Aktif');
       $table->string('slug');
       $table->softDeletes();
       $table->timestamps();
