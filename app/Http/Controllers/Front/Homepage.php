@@ -23,6 +23,7 @@ class Homepage extends Controller
 
     view()->share('pages',Page::where('status',1)->orderBy('order','ASC')->get());
     view()->share('categories',Category::where('status',1)->orderBy('name','ASC')->get());
+    view()->share('config',Config::find(1));
   }
 
   public function index(){
