@@ -21,7 +21,7 @@
   <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
     <div class="container px-4 px-lg-5">
       @if($config->logo!=null)
-    <img src="{{asset($config->logo)}}" width="150" alt="logo">
+    <a href="{{route('admin.login')}}"><img src="{{asset($config->logo)}}" width="150" alt="logo"></a>
   @else
     <span style="color:white" ><a href="{{route('admin.login')}}"> {{$config->title}}</a></span>
   @endif
