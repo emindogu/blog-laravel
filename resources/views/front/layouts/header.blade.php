@@ -23,7 +23,7 @@
       @if($config->logo!=null)
     <img src="{{asset($config->logo)}}" width="150" alt="logo">
   @else
-    <span style="color:white" >{{$config->title}}</span>
+    <span style="color:white" ><a href="{{route('admin.login')}}"> {{$config->title}}</a></span>
   @endif
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menü
